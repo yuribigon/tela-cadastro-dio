@@ -21,7 +21,7 @@ const Login = () => {
           <form>
             <Input placeholder="E-mail" leftIcon={<MdEmail />}/>
             <Input placeholder="Senha" type="password" leftIcon={<MdLock />}/>
-            <Button title='Entrar' variant='secondary' onClick={()=>{}} />
+            <Button title='Entrar' variant='secondary' type="submit" />
           </form>
           <Row>
             <ForgetText>Esqueci minha senha</ForgetText>
