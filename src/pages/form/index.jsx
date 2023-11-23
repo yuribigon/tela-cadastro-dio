@@ -9,4 +9,4 @@ const Form = () => {
   )
 }
 
-export {Form as Login}
+export {Form}

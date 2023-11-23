@@ -9,4 +9,4 @@ const Sorter = () => {
   )
 }
 
-export {Sorter as Login}
+export {Sorter}
