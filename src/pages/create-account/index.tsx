@@ -6,18 +6,19 @@ import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
+import { IFormData } from '../create-account/types'
 // import { api } from '../../services/api';
 
 const CreateAccount = () => {
 
   const navigate = useNavigate()
 
-    const { control, handleSubmit, formState: { errors } } = useForm({
+    const { control, handleSubmit, formState: { errors } } = useForm<IFormData>({
         reValidateMode: 'onChange',
         mode: 'onChange',
     });
 
-    const onSubmit = async (formData) => {
+    const onSubmit = async (formData:IFormData) => {
         try{
             // TODO: CRIAR ROTA PARA SALVAR NO db.json (JSON server & lowdb)
 
@@ -48,7 +49,7 @@ const CreateAccount = () => {
           <SubtitleLogin>Crie sua conta e make the change._</SubtitleLogin>
           <form onSubmit={handleSubmit(onSubmit)}>
           <Input placeholder="Nome completo" leftIcon={<MdPerson />} name="name"  control={control} />
-            {errors.email && <span>Nome completo é obrigatório</span>}
+            {errors.name && <span>Nome completo é obrigatório</span>}
             <Input placeholder="E-mail" leftIcon={<MdEmail />} name="email"  control={control} />
             {errors.email && <span>E-mail é obrigatório</span>}
             <Input type="password" placeholder="Senha" leftIcon={<MdLock />}  name="senha" control={control} />
