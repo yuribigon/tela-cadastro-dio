@@ -33,6 +33,15 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
 `
+export const Logo = styled.a`
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    margin-right: 12px;
+    text-decoration: none;
+`
 
 export const BuscarInputContainer = styled.div`
     width: 275px;
@@ -57,7 +66,7 @@ export const Menu = styled.a`
 export const MenuRight = styled.a`
     font-family: 'Open Sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 25px;
     color: #fff;
     margin-right: 12px;

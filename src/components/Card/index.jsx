@@ -16,20 +16,20 @@ const Card = () => {
       <ImageBackground src="https://paulryan.com.au/wp-content/uploads/2015/01/high-resolution-wallpapers-25.jpg"/>
       <Content>
         <UserInfo>
-          <UserPicture src="https://avatars.githubusercontent.com/u/45184516?v=4"/>
+          <UserPicture src="https://avatars.githubusercontent.com/u/90423131?v=4"/>
          <div>
-          <h4>Pablo Henrique</h4>
-          <p>Há 8 minutos</p>
+          <h4>Yuri Bigon</h4>
+          <p>Há 22 minutos</p>
         </div> 
         </UserInfo>
         <PostInfo>
-          <h4>Projeto para curso de HTML e CSS </h4>
-          <p>Projeto feito no curso de html e css no bootcamp da dio do Global avanade...<strong>Saiba Mais</strong></p>
+          <h4>Projeto para curso de React </h4>
+          <p>Projeto feito no curso de React pela DIO, com enfâse em Hook Forms... <strong>Saiba Mais</strong></p>
         </PostInfo>
         <HasInfo>
-          <h4>#HTML #CSS #Javascript</h4>
+          <h4>#ReactJS #Hooks #Javascript</h4>
           <p>
-            <FiThumbsUp />10
+            <FiThumbsUp /> 11
           </p>
         </HasInfo>
       </Content>

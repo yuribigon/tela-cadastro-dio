@@ -42,8 +42,8 @@ const Login = () => {
       </Column>
       <Column>
         <Wrapper>
-          <TitleLogin>Faça seu cadastro</TitleLogin>
-          <SubtitleLogin>Faça seu login e make the change.</SubtitleLogin>
+          <TitleLogin>Faça seu login</TitleLogin>
+          <SubtitleLogin>Faça seu login e make the change._</SubtitleLogin>
           <form onSubmit={handleSubmit(onSubmit)}>
             <Input placeholder="E-mail" leftIcon={<MdEmail />} name="email"  control={control} />
             {errors.email && <span>E-mail é obrigatório</span>}
@@ -53,7 +53,7 @@ const Login = () => {
           </form>
           <Row>
             <ForgetText>Esqueci minha senha</ForgetText>
-            <CreateText>Criar conta</CreateText>
+            <CreateText href="/create-account">Criar conta</CreateText>
           </Row>
         </Wrapper>
       </Column>

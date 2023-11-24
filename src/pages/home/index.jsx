@@ -7,9 +7,9 @@ import { Header } from '../../components/Header'
 const Home = () => {
   const navigate = useNavigate();
 
-    const handleClickSignIn = () => {
-        navigate('/login')
-    }
+  const handleClickSignIn = () => {
+      navigate('/login')
+  }
   return ( <>
     <Header />
     <Container>
